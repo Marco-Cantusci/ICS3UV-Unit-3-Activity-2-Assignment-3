@@ -11,27 +11,27 @@ const totalCentsNumber: number = parseInt(totalCentsString);
 
 // process
 // toonie calculations
-let toonies: number = totalCentsNumber / 200 | 0;
-let remainingToonies: number = totalCentsNumber % 200;
+const toonies: number = totalCentsNumber / 200 | 0;
+const remainingToonies: number = totalCentsNumber % 200;
 
 // loonie calculations
-let dollars: number = remainingToonies / 100 | 0;
-let remainingDollars: number = remainingToonies % 100;
+const dollars: number = remainingToonies / 100 | 0;
+const remainingDollars: number = remainingToonies % 100;
 
 // quarter calculations
-let quarters: number = remainingDollars / 25 | 0;
-let remainingQuarters: number = remainingDollars % 25;
+const quarters: number = remainingDollars / 25 | 0;
+const remainingQuarters: number = remainingDollars % 25;
 
 // dime calculations
-let dimes: number = remainingQuarters / 10 | 0;
-let remainingDimes: number = remainingQuarters % 10;
+const dimes: number = remainingQuarters / 10 | 0;
+const remainingDimes: number = remainingQuarters % 10;
 
 // nickel calculations
-let nickels: number = remainingDimes / 5| 0;
-let remainingNickels: number = remainingDimes % 5;
+const nickels: number = remainingDimes / 5| 0;
+const remainingNickels: number = remainingDimes % 5;
 
 // pennie calculation
-let pennies: number = remainingNickels;
+const pennies: number = remainingNickels;
 
 console.log(`Your change is: ${toonies} toonies, ${dollars} loonies, ${quarters} quarters, ${dimes} dimes, ${nickels} nickels, and ${pennies} pennies.`);
 
